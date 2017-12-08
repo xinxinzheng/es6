@@ -1,0 +1,23 @@
+<div class="circle">
+</div>
+<style>
+    .circle {
+        height: 500px;
+        width: 500px;
+        border: 10px solid #666666;
+        margin: 50px auto;
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .circle:before {
+        content: '';
+        position: absolute;
+        height: 480px;
+        width: 480px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, transparent, #007ACC 15px, #2C9ACB 30px, white) left top / 48px 48px;
+    }
+</style>
